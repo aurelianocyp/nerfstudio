@@ -302,34 +302,5 @@ We provide the following support structures to make life easier for getting star
 - :chart_with_upwards_trend: Easy-to-use benchmarking scripts on the Blender dataset
 - :iphone: Full pipeline support (w/ Colmap, Polycam, or Record3D) for going from a video on your phone to a full 3D render.
 
-# Built On
-
-<a href="https://github.com/brentyi/tyro">
-<!-- pypi-strip -->
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://brentyi.github.io/tyro/_static/logo-dark.svg" />
-<!-- /pypi-strip -->
-    <img alt="tyro logo" src="https://brentyi.github.io/tyro/_static/logo-light.svg" width="150px" />
-<!-- pypi-strip -->
-</picture>
-<!-- /pypi-strip -->
-</a>
-
-- Easy-to-use config system
-- Developed by [Brent Yi](https://brentyi.com/)
-
-<a href="https://github.com/KAIR-BAIR/nerfacc">
-<!-- pypi-strip -->
-<picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/3310961/199083722-881a2372-62c1-4255-8521-31a95a721851.png" />
-<!-- /pypi-strip -->
-    <img alt="tyro logo" src="https://user-images.githubusercontent.com/3310961/199084143-0d63eb40-3f35-48d2-a9d5-78d1d60b7d66.png" width="250px" />
-<!-- pypi-strip -->
-</picture>
-<!-- /pypi-strip -->
-</a>
-
-- Library for accelerating NeRF renders
-- Developed by [Ruilong Li](https://www.liruilong.cn/)
 
 
