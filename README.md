@@ -4,7 +4,11 @@ https://docs.nerf.studio/quickstart/custom_dataset.html#images-or-video
 `ns-process-data {images, video} --data {DATA_PATH} --output-dir {PROCESSED_DATA_DIR}`
 ## Training on your data
 `ns-train nerfacto --data {PROCESSED_DATA_DIR}`
+## matching method
 
+https://radiancefields.com/the-definitive-nerfstudio-command-guide
+
+`ns-process-data images --matching-method exhaustive --data data/bulldozer --output-dir data/bulldozer`
 
 # Quickstart
 
