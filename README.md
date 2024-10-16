@@ -13,6 +13,10 @@ https://radiancefields.com/the-definitive-nerfstudio-command-guide
 
 `ns-process-data images --matching-method exhaustive --data data/bulldozer --output-dir data/bulldozer`
 
+## eval
+
+`ns-eval --load-config --output-path ***.json`
+
 # Quickstart
 
 The quickstart will help you get started with the default vanilla NeRF trained on the classic Blender Lego scene.
