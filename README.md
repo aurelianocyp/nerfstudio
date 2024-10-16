@@ -15,7 +15,7 @@ https://radiancefields.com/the-definitive-nerfstudio-command-guide
 
 ## eval
 
-`ns-eval --load-config --output-path ***.json`
+`ns-eval --load-config --output-path name.json`
 
 # Quickstart
 
