@@ -54,6 +54,10 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 
 需要安装cuda11.7参考[Dependencies](https://github.com/nerfstudio-project/nerfstudio/blob/main/docs/quickstart/installation.md#dependencies)
 
+如果tiny cudann报错：https://github.com/NVlabs/tiny-cuda-nn/issues/385
+
+连不上github可以先pip install ninja 然后通过git命令把tiny cuda nn库下载下来，然后进入torch下pip install .
+
 ### Installing nerfstudio
 
 Easy option:
