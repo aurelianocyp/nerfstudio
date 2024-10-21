@@ -58,6 +58,8 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 
 连不上github可以先pip install ninja 然后通过git命令把tiny cuda nn库下载下来，然后进入torch下pip install . 因为可能要求gcc -v是9.4 9.5但机器只有7.多
 
+如果环境配好了但是splatnerf出了问题是因为ninja，那么可以读一读报错，把某个h头文件复制到某个位置就行。
+
 ### Installing nerfstudio
 
 Easy option:
