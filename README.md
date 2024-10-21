@@ -56,7 +56,7 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 
 如果tiny cudann报错：https://github.com/NVlabs/tiny-cuda-nn/issues/385
 
-连不上github可以先pip install ninja 然后通过git命令把tiny cuda nn库下载下来，然后进入torch下pip install .
+连不上github可以先pip install ninja 然后通过git命令把tiny cuda nn库下载下来，然后进入torch下pip install . 因为可能要求gcc -v是9.4 9.5但机器只有7.多
 
 ### Installing nerfstudio
 
