@@ -62,6 +62,7 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 
 注意系统cuda版本
 
+如果 crypt.h不存在就`cp /usr/include/crypt.h /envs/nerfstudio/include/python3.8/`
 ### Installing nerfstudio
 
 Easy option:
