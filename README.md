@@ -60,6 +60,8 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 
 如果环境配好了但是splatnerf出了问题是因为ninja，那么可以读一读报错，把某个h头文件复制到某个位置就行。
 
+注意系统cuda版本
+
 ### Installing nerfstudio
 
 Easy option:
