@@ -13,6 +13,17 @@ https://radiancefields.com/the-definitive-nerfstudio-command-guide
 
 `ns-process-data images --matching-method exhaustive --data data/bulldozer --output-dir data/bulldozer`
 
+## viewer
+
+Given a pretrained model checkpoint, you can start the viewer by running
+
+```bash
+ns-viewer --load-config {outputs/.../config.yml}
+```
+
+viewer的使用
+render中有关键帧。可以添加多个时间作为关键帧。点击下面的play，就可以看见场景中有个绿色的在动。点击preview render就可以亲临实地观看。
+
 ## eval
 
 `ns-eval --load-config --output-path name.json --render-output-path eval_render`
@@ -115,13 +126,8 @@ It is possible to load a pretrained model by running
 ns-train nerfacto --data data/nerfstudio/poster --load-dir {outputs/.../nerfstudio_models}
 ```
 
-## Visualize existing run
 
-Given a pretrained model checkpoint, you can start the viewer by running
 
-```bash
-ns-viewer --load-config {outputs/.../config.yml}
-```
 
 ## 3. Exporting Results
 
