@@ -22,7 +22,10 @@ ns-viewer --load-config {outputs/.../config.yml}
 ```
 
 viewer的使用
+
 render中有关键帧。可以添加多个时间作为关键帧。点击下面的play，就可以看见场景中有个绿色的在动。点击preview render就可以亲临实地观看。
+
+在上面的connection diagnostics中可以选择是否显示fps也就是WebGL Statistics。下面的眼睛点亮点灭还能选择是否显示各种各样的东西。
 
 ## eval
 
