@@ -36,6 +36,11 @@ render中有关键帧。可以添加多个时间作为关键帧。点击下面�
 The quickstart will help you get started with the default vanilla NeRF trained on the classic Blender Lego scene.
 For more complex changes (e.g., running with your own data/setting up a new NeRF graph), please refer to our [references](#learn-more).
 
+# downsample
+
+https://github.com/nerfstudio-project/nerfstudio/issues/3221
+ns-train splatfacto nerfstudio-data --data my data\colmappano_8  --downscale-factor 1
+
 ## 1. Installation: Setup the environment
 
 ### Prerequisites
