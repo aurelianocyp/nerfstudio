@@ -81,6 +81,9 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 
 注意系统cuda版本
 
+如果报ld:cannot find -lcuda:No such file or directory，那么export LIBRARY_PATH=/usr/local/cuda-11.8/lib64/stubs:$LIBRARY_PATH
+
+
 如果 crypt.h不存在就`cp /usr/include/crypt.h /envs/nerfstudio/include/python3.8/`
 ### Installing nerfstudio
 
