@@ -52,7 +52,7 @@ You must have an NVIDIA video card with CUDA installed on the system. This libra
 Nerfstudio requires `python >= 3.8`. We recommend using conda to manage dependencies. Make sure to install [Conda](https://docs.conda.io/miniconda.html) before proceeding.
 
 ```bash
-conda create --name nerfstudio -y python=3.8
+conda create --name nerfstudio  python=3.8
 conda activate nerfstudio
 pip install --upgrade pip
 ```
