@@ -249,5 +249,8 @@ We provide the following support structures to make life easier for getting star
 - :chart_with_upwards_trend: Easy-to-use benchmarking scripts on the Blender dataset
 - :iphone: Full pipeline support (w/ Colmap, Polycam, or Record3D) for going from a video on your phone to a full 3D render.
 
+  # notes
+  * 当你激活一个conda环境时，它会自动将该环境中的bin目录添加到系统的PATH变量中。因此，在这个环境中，你可以直接运行那些在bin目录中的可执行文件（例如ns-train）
+
 
 
