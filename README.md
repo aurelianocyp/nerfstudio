@@ -251,6 +251,5 @@ We provide the following support structures to make life easier for getting star
 
   # notes
   * 当你激活一个conda环境时，它会自动将该环境中的bin目录添加到系统的PATH变量中。因此，在这个环境中，你可以直接运行那些在bin目录中的可执行文件（例如ns-train）
-
-
+  * 渲染器中各个相机视角的关闭在a6000/nerfstudio_mine/nerfstudio/viewer/viewer.py中的camera_handle = self.viser_server.scene.add_camera_frustum
 
