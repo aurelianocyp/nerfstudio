@@ -8,7 +8,7 @@ https://docs.nerf.studio/quickstart/custom_dataset.html#images-or-video
 ## Training on your data
 `ns-train nerfacto --data {PROCESSED_DATA_DIR}`
 
-`ns-train nerfacto --data {PROCESSED_DATA_DIR} -- --steps-per-save 2000000  --max-num-iterations 4000000`
+`ns-train nerfacto --data {PROCESSED_DATA_DIR} --steps-per-save 2000000  --max-num-iterations 4000000`
 
 ## matching method
 
