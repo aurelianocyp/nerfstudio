@@ -10,6 +10,8 @@ https://docs.nerf.studio/quickstart/custom_dataset.html#images-or-video
 
 `ns-train nerfacto --data {PROCESSED_DATA_DIR} --steps-per-save 2000000  --max-num-iterations 4000000`
 
+在训练时能指定下采样参数，这也许可以提高ns-eval得到的分辨率。之前是怎么提高的我忘记了。
+
 ## matching method
 
 https://radiancefields.com/the-definitive-nerfstudio-command-guide
