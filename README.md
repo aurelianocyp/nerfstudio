@@ -6,9 +6,16 @@ https://docs.nerf.studio/quickstart/custom_dataset.html#images-or-video
 ## Processing Data
 `ns-process-data {images, video} --data {DATA_PATH} --output-dir {PROCESSED_DATA_DIR}`
 
+ns-process-data video --help:
+
+ --matching-method {exhaustive,sequential,vocab_tree}  (default: sequential)   https://radiancefields.com/the-definitive-nerfstudio-command-guide
+
+--num-downscales INT  Number of times to downscale the images. Downscales by 2 each time. For example a value of 3 will downscale the images by 2x, 4x, and 8x. (default: 3)   
+
+ --num-frames-target INT Target number of frames to use per video, results may not be exact. (default: 300)       
 
 
-`ns-process-data images --matching-method exhaustive --data data/bulldozer --output-dir data/bulldozer` https://radiancefields.com/the-definitive-nerfstudio-command-guide
+
 ## Training on your data
 `ns-train nerfacto --data {PROCESSED_DATA_DIR}`
 
