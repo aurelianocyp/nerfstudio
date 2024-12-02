@@ -5,18 +5,14 @@
 https://docs.nerf.studio/quickstart/custom_dataset.html#images-or-video
 ## Processing Data
 `ns-process-data {images, video} --data {DATA_PATH} --output-dir {PROCESSED_DATA_DIR}`
+
+
+
+`ns-process-data images --matching-method exhaustive --data data/bulldozer --output-dir data/bulldozer` https://radiancefields.com/the-definitive-nerfstudio-command-guide
 ## Training on your data
 `ns-train nerfacto --data {PROCESSED_DATA_DIR}`
 
 `ns-train nerfacto --data {PROCESSED_DATA_DIR} --steps-per-save 2000000  --max-num-iterations 4000000`
-
-在训练时能指定下采样参数，这也许可以提高ns-eval得到的分辨率。之前是怎么提高的我忘记了。
-
-## matching method
-
-https://radiancefields.com/the-definitive-nerfstudio-command-guide
-
-`ns-process-data images --matching-method exhaustive --data data/bulldozer --output-dir data/bulldozer`
 
 ## viewer
 
@@ -259,4 +255,5 @@ We provide the following support structures to make life easier for getting star
   * 当你激活一个conda环境时，它会自动将该环境中的bin目录添加到系统的PATH变量中。因此，在这个环境中，你可以直接运行那些在bin目录中的可执行文件（例如ns-train）
   * 渲染器中各个相机视角的关闭在a6000/nerfstudio_mine/nerfstudio/viewer/viewer.py中的camera_handle = self.viser_server.scene.add_camera_frustum
   * 控制视角收缩远近的限制在a6000/nerfstudio_mine/nerfstudio/viewer/viewer.py中的VISER_NERFSTUDIO_SCALE_RATIO，越大，代表可以缩放的范围越近，参考10与100。且此参数不会影响任何训练，只影响查看
+  * 提高渲染分辨率：https://github.com/nerfstudio-project/nerfstudio/issues/972 
 
