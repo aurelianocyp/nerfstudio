@@ -10,7 +10,7 @@ ns-process-data video --help:
 
  * **--matching-method** {exhaustive,sequential,vocab_tree}  (default: sequential)   https://radiancefields.com/the-definitive-nerfstudio-command-guide
  * **--num-downscales** INT  Number of times to downscale the images. Downscales by 2 each time. For example a value of 3 will downscale the images by 2x, 4x, and 8x. (default: 3)
- * **--num-frames-target** INT Target number of frames to use per video, results may not be exact. (default: 300)       
+ * **--num-frames-target** INT Target number of frames to use per video, results may not be exact. (default: 300)，慎用，600张很慢       
 
 
 
