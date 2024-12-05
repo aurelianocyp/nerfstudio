@@ -263,4 +263,5 @@ We provide the following support structures to make life easier for getting star
   * 提高渲染分辨率：https://github.com/nerfstudio-project/nerfstudio/issues/972
   * 更改viewer的查看范围：在crop viewpoint中进行更改，先enable，然后调整Crop scale，越大可以查看的范围越大，甚至能调到100\*100*100，如果勾选了split screen则是可以查看到一个彩色的正方形，在正方形内的才算是真正在去渲染的范围。
   * colmap时选择的图片多一点也许真能提高质量，选择了exhaustive应该不至于匹配不到点。
+  * splatfacto训练快，viewer查看时渲染也快
 
