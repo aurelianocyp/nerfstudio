@@ -260,5 +260,6 @@ We provide the following support structures to make life easier for getting star
   * 当你激活一个conda环境时，它会自动将该环境中的bin目录添加到系统的PATH变量中。因此，在这个环境中，你可以直接运行那些在bin目录中的可执行文件（例如ns-train）
   * 渲染器中各个相机视角的关闭在a6000/nerfstudio_mine/nerfstudio/viewer/viewer.py中的camera_handle = self.viser_server.scene.add_camera_frustum
   * 控制视角收缩远近的限制在a6000/nerfstudio_mine/nerfstudio/viewer/viewer.py中的VISER_NERFSTUDIO_SCALE_RATIO，越大，代表可以缩放的范围越近，参考10与100。且此参数不会影响任何训练，只影响查看
-  * 提高渲染分辨率：https://github.com/nerfstudio-project/nerfstudio/issues/972 
+  * 提高渲染分辨率：https://github.com/nerfstudio-project/nerfstudio/issues/972
+  * 更改viewer的查看范围：在crop viewpoint中进行更改，先enable，然后调整Crop scale，越大可以查看的范围越大，甚至能调到100\*100*100，如果勾选了split screen则是可以查看到一个彩色的正方形，在正方形内的才算是真正在去渲染的范围。
 
