@@ -265,4 +265,5 @@ We provide the following support structures to make life easier for getting star
   * colmap时选择的图片多一点也许真能提高质量，选择了exhaustive应该不至于匹配不到点。
   * splatfacto训练快，viewer查看时渲染也快。splatfacto的模糊区域是尖庄模糊，nerfacto是糊状模糊。
   * controlpanel具体内容在viewer/control_panel.py中修改。要修改某个栏中具体有哪些控件，把add element注释掉就行。只通过控件的visible这时候可能不太行。
+  * 控制拉伸范围时用VISER_NERFSTUDIO_SCALE_RATIO，但是把拉伸范围限制后，初始视角也会被限制。通过观察发现，在viewer.py中的handle_new_client函数初始时要执行十次渲染才会得到最终的那个背景图片（viser是在render_state_machine.py中通过设置背景图片来查看二维结果的）。于是可以设置一个is_first，设置为11。但是好像11倒计时结束后，它还是是会回去，因为相机位置依旧没变，当VISER_NERFSTUDIO_SCALE_RATIO变了场景自然就变了。
 
