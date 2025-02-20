@@ -19,6 +19,8 @@ ns-process-data video --help:
 
 `ns-train nerfacto --data {PROCESSED_DATA_DIR} --steps-per-save 2000000  --max-num-iterations 4000000`
 
+ --output-dir
+
 ## viewer
 
 Given a pretrained model checkpoint, you can start the viewer by running
