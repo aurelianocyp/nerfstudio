@@ -269,6 +269,5 @@ We provide the following support structures to make life easier for getting star
   * controlpanel具体内容在viewer/control_panel.py中修改。要修改某个栏中具体有哪些控件，把add element注释掉就行。只通过控件的visible这时候可能不太行。
   * 控制拉伸范围时用VISER_NERFSTUDIO_SCALE_RATIO，但是把拉伸范围限制后，初始视角也会被限制。通过观察发现，在viewer.py中的handle_new_client函数初始时要执行十次渲染才会得到最终的那个背景图片（viser是在render_state_machine.py中通过设置背景图片来查看二维结果的）。于是可以设置一个is_first，设置为11。但是好像11倒计时结束后，它还是是会回去，因为相机位置依旧没变，当VISER_NERFSTUDIO_SCALE_RATIO变了场景自然就变了。
   * 还是没有解决怎么初始视角的问题。他这个写的很奇怪，大概就是在handle_new_client中激活渲染，然后get_camera_state决定视角，这个视角是从client中读到的，我也不知道在哪里初始化了client，应该client是属于viser server里面的，然后又是从client中的camera也就是camerahandle中读取当前屏幕的视角。我更改了默认的初始化值，但是依旧没有用。
-  * viser文档写的很扯，看不明白，没办法
-  * 还是把拉伸限制取消了吧，糟心
+  * 重建出来模糊的问题：https://github.com/nerfstudio-project/nerfstudio/issues/3419
 
