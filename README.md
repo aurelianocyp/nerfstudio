@@ -94,6 +94,8 @@ pip install ninja git+https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindi
 如果报cannot import name 'csrc' from 'gsplat' ，可以参考：https://github.com/nerfstudio-project/nerfstudio/issues/2727 ，大概就是要么两次卸载重装gsplat，要么重新打开终端。我没有卸载重装，重新打开终端就好了
 
 如果 crypt.h不存在就`cp /usr/include/crypt.h /envs/nerfstudio/include/python3.8/`
+
+还可能需要sudo apt install g++
 ### Installing nerfstudio
 
 Easy option:
