@@ -19,6 +19,8 @@ ns-process-data video --help:
 
 `ns-train nerfacto --data {PROCESSED_DATA_DIR} --steps-per-save 2000000  --max-num-iterations 4000000`
 
+ns-train splatfacto colmap --data monument_video
+
  --output-dir
 
 ## viewer
